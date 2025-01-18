@@ -1,0 +1,14 @@
+The pexels.com API Key: gkz0O7CJCYnpkkIMOpLJp7lnGN2s4UWn0MiVItMJs4rd1AIkXKivrTje
+
+API Formated URL: `https://api.pexels.com/v1/curated?per_page=${perPage}&page=${page}`
+API Formated URL By Searching: `https://api.pexels.com/v1/search?query=${query}&per_page=${perPage}&page=${page}`
+
+API Key must be included in the headers of my request & here's the formula: 
+-----------------
+fetch(`https://api.pexels.com/v1/search?query=${query}&per_page=${perPage}&page=${page}`, {
+    method: "GET",
+    headers: {
+        Authorization: apiKey, // Include the API key here
+    },
+})
+-----------------

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Search Engine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+</head>
+<body>
+    
+    <header class="hero">
+        <div class="info">
+            <h1 class="title">Image Search Engine With JavaScript</h1>
+            <p class="desc">Search and download any images within a second</p>
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search for images" autocomplete="off">
+            <i class="ri-search-2-line" id="search-btn"></i>
+        </div>
+    </header>
+
+    <main class="gallery">
+        <ul class="images">
+            <!-- Done Using JS -->
+        </ul>
+        <button id="show-more" onclick="loadMoreImages()">Show More</button>
+    </main>
+
+    <div class="light-box">
+        <div class="wrapper">
+            <div class="header">
+                <div class="photographer-box">
+                    <i class="ri-camera-line"></i>
+                    <p class="photographer-name">Djaber Touati</p>
+                </div>
+
+                <div class="buttons">
+                    <i class="ri-download-2-line icon-btn" id="downloader"></i>
+                    <i class="ri-close-large-fill icon-btn" id="close-btn"></i>
+                </div>
+            </div>
+
+            <img src="" class="exp-image">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
