@@ -331,7 +331,6 @@ button {
     font-size: 20px;
     font-weight: 600;
 }
-
 /* Responsive Codes */
 @media screen and (max-width: 768px) {
     .hero .info .title {
@@ -345,6 +344,10 @@ button {
     .hero .search-box {
         width: 80%;
     }
+
+    .gallery .images .image-card .details {
+        bottom: 0;
+    }
     
     .light-box .wrapper .exp-image {
         width: 320px;
@@ -352,12 +355,24 @@ button {
 }
 
 @media screen and (max-width: 500px) {
+    .hero .search-box {
+        justify-content: space-between;
+    }
+
+    .hero .search-box input {
+        flex: 0;
+    }
+
     .hero .info .title {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .hero .info .desc {
-        font-size: 15px;
+        font-size: 14px;
+    }
+
+    .gallery {
+        padding: 30px;
     }
     
     .light-box .wrapper .exp-image {
