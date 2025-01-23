@@ -361,6 +361,7 @@ button {
 
     .hero .search-box input {
         flex: 0;
+        width: 180px;
     }
 
     .hero .info .title {
@@ -373,6 +374,10 @@ button {
 
     .gallery {
         padding: 30px;
+    }
+
+    .gallery .alert-text {
+        font-size: 18px;
     }
     
     .light-box .wrapper .exp-image {
